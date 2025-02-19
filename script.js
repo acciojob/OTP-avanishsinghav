@@ -11,6 +11,9 @@ document.addEventListener("DOMContentLoaded", function(){
 			if(event.key === "Backspace" && event.target.value === "" && index>0){
 				inputs[index-1].focus()
 			}
+			else{
+				event.target.vaule = "";
+			}
 		})
 	})
 })
